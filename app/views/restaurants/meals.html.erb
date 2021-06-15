@@ -1,7 +1,7 @@
 <ul>
   <% @meals.each do |meal| %>
     <li>
-      <%= meal.name %>  
+      <%= meal.name %> - <%= link_to "Add to Cart", meal_cart_items_path(meal), method: :posts %>
     </li>
   <% end %>
 </ul>
