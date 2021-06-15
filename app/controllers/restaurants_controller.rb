@@ -2,6 +2,7 @@ class RestaurantsController < ApplicationController
   def meals
     set_restaurant
     @meals = @restaurant.meals
+    @shopping_cart = ShoppingCart.last # in a real app it would be the user's shopping cart
   end
 
   def index
