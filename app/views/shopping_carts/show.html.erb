@@ -1,2 +1,9 @@
-<h1>ShoppingCarts#show</h1>
-<p>Find me in app/views/shopping_carts/show.html.erb</p>
+<h1>Your ShoppingCart</h1>
+<p>The status is <%= @shopping_cart.status %></p>
+
+<p>Your Meals in the shopping cart</p>
+<ul>
+  <% @shopping_cart.meals.each do |meal| %>
+    <li> <%= meal.name %> </li>
+  <% end %>
+</ul>
