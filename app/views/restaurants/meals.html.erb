@@ -6,6 +6,7 @@
   <% end %>
 </ul>
 
-<% if @shopping_cart %>
+<%# display the button only if the shopping cart exists AND it has meals inside %>
+<% if @shopping_cart && @shopping_cart.meals.present? %> 
   <%= link_to 'Check your Cart', shopping_cart_path(@shopping_cart) %>
 <% end %>
