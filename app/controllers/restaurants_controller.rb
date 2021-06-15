@@ -1,4 +1,9 @@
 class RestaurantsController < ApplicationController
+  def meals
+    set_restaurant
+    @meals = @restaurant.meals
+  end
+
   def index
     @restaurants = Restaurant.all
   end
