@@ -20,6 +20,12 @@ Restaurant.all.each do |restaurant|
   end
 end
 
+shopping_cart = ShoppingCart.create!
+
+CartItem.create!(
+  shopping_cart: shopping_cart,
+  meal: Meal.first
+)
 
 puts "Let's drink a beer"
 puts %{
