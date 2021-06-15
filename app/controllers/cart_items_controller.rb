@@ -9,6 +9,7 @@ class CartItemsController < ApplicationController
     @meal.shopping_carts << @shopping_cart 
     # HOW?! Check up here -> https://github.com/andrerferrer/active-record-join-tables-demo#goal
 
+    flash[:notice] = "#{@meal.name} added to the shopping cart"
     redirect_to meals_restaurant_path(@meal.restaurant)
   end
 end
