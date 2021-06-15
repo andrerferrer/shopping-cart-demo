@@ -5,6 +5,10 @@
   <%= pluralize @restaurant.reviews.size, "review" %>
 </h2>
 
+<h2>
+  <%= link_to "Check up the menu", meals_restaurant_path(@restaurant) %>
+</h2>
+
 <div id="reviews">
   <% if @restaurant.reviews.blank? %>
     Be the first to leave a review for <%= @restaurant.name %>
