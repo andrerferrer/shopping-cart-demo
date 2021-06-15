@@ -5,3 +5,7 @@
     </li>
   <% end %>
 </ul>
+
+<% if @shopping_cart %>
+  <%= link_to 'Check your Cart', shopping_cart_path(@shopping_cart) %>
+<% end %>
