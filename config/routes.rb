@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'shopping_carts/show'
   root to: 'restaurants#index'
   resources :restaurants, only: %i[index show new create destroy] do
     member do
