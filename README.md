@@ -33,7 +33,5 @@ This is a demo to show-case how to implement a simple shopping cart feature in a
   * [Finish show page of shopping cart](https://github.com/andrerferrer/shopping-cart-demo/commit/f5b89931bdac2dc8144fddfda5fa889be410bd37)
   * [make shopping cart show btn display only IF it should](https://github.com/andrerferrer/shopping-cart-demo/commit/bd8351d74e3fdbe4644479f073d4cfa9b976b354)
 
-Remember to `bundle install`
-
 And we're good to go 🤓
 Good Luck and Have Fun
